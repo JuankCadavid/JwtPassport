@@ -1,0 +1,39 @@
+{
+  "name": "JwtPassportTypeOrm",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc-watch --onSuccess \"node dist/index.js \"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "^13.7.6",
+    "bcrypt": "^4.0.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongodb": "^3.5.4",
+    "morgan": "^1.9.1",
+    "passport": "^0.4.1",
+    "passport-jwt": "^4.0.0",
+    "pg": "^7.18.2",
+    "reflect-metadata": "^0.1.13",
+    "typeorm": "^0.2.24"
+  },
+  "devDependencies": {
+    "@types/bcrypt": "^3.0.0",
+    "@types/cors": "^2.8.6",
+    "@types/express": "^4.17.2",
+    "@types/jsonwebtoken": "^8.3.7",
+    "@types/morgan": "^1.7.37",
+    "@types/passport": "^1.0.2",
+    "@types/passport-jwt": "^3.0.3",
+    "tsc-watch": "^4.1.0",
+    "typescript": "^3.8.2"
+  }
+}

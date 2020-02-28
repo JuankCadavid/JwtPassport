@@ -1,0 +1,11 @@
+{
+    "type": "mongodb",
+    "host": "localhost",
+    "port": 27017,
+    "username": "",
+    "password": "",
+    "database": "Agrocommerce",
+    "entities":["dist/entities/**/*.js"],
+    "useUnifiedTopology":true,
+    "synchrinize":true
+}
