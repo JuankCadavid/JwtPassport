@@ -1,11 +1,11 @@
 import { Router } from "express";
+import productscontroller from "../controllers/product.controller";
+import passport from "passport";
+
 
 const router = Router ();
 
-import productscontroller from "../controllers/product.controller";
-
-
-router.get('/products',productscontroller.getProducts);
+router.get('/products',passport.authenticate('jwt',{session:false}),productscontroller.getProducts);
 router.get('/products/:id',productscontroller.getProduct);
 router.get('/products/name/:name',productscontroller.getProductName);
 router.post('/products',productscontroller.createProducts);

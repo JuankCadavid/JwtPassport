@@ -36,8 +36,8 @@ class productsController {
 
     public async createProducts(req: Request, res: Response): Promise<Response> {
 
-        const newUser = getRepository(Products).create(req.body);
-        const result = await getRepository(Products).save(newUser);
+        const newProduct = getRepository(Products).create(req.body);
+        const result = await getRepository(Products).save(newProduct);
 
         return res.json(result);
 
@@ -57,7 +57,7 @@ class productsController {
             return res.json(result);
         }
 
-        return res.status(404).json({ msg: 'Not user found' });
+        return res.status(404).json({ msg: 'Not product found' });
 
     }
 
